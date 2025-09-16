@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+    
+</head>
+<script>
+    function listar(){
+        //alert('Página de listagem chamada com sucesso')
+        formcadastro.action='listar.php'
+        formcadastro.submit();
+    }
+</script>
+
+<body>
+    <form name="formcadastro" method="POST" action="cadastro.php">
+        Nome: <input type="text" id="txtnome" name="txtnome" /><br />
+        Endereço: <input type="text" id="txtendereco" name="txtendereco" /><br />
+        Telefone: <input type="text" id="txttelefone" name="txttelefone" /><br />
+        Email: <input type="email" id="txtemail" name="txtemail" /><br />
+        <input type="submit" value="Gravar"/>
+        <input type="button" value="Listar" onclick='javascript:listar();'/>
+    </form>
+
+</body>
+
+</html>
