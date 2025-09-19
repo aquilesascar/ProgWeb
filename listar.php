@@ -2,9 +2,7 @@
 include 'conexao.php';
 $sql = 'select * from academico.alunos';
 $result = pg_query($conexao, $sql);
-
 if ($result) {
-
     while($alunos = pg_fetch_array($result)) {
         
         echo $alunos['nome']; echo "&emsp;";
